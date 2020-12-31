@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper"
+    tools:context=".PlayGameActivity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txvCoin"
+            android:text="10"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:minWidth="100dp"
+            android:gravity="center"
+            android:background="@drawable/bg_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imageRiddle"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/catinh"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp">
+        <GridView
+
+            android:id="@+id/gdvAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </GridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_marginBottom="60dp"
+            android:id="@+id/gdvChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </GridView>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:padding="3dp"
+            android:layout_height="50dp">
+            <Button
+                android:onClick="openHints"
+                android:text="Hints"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:background="@drawable/bg_coin"
+                android:layout_width="1dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <Button
+                android:onClick="changeQuiz"
+                android:text="Change Quiz"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:background="@drawable/bg_coin"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
